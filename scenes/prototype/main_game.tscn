@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dp4x2s6hefp1i"]
+
+[node name="MainGame" type="Node2D" unique_id=812203580]
+
+[node name="HUDLayer" type="CanvasLayer" parent="." unique_id=389686426]
+
+[node name="HUD" type="Control" parent="HUDLayer" unique_id=804253264]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
