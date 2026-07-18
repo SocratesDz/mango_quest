@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://bih4uxppt828p"]
 
-[node name="MainMenu" type="Node2D" unique_id=1682231727]
+[ext_resource type="Theme" uid="uid://j7rd4pivy3ya" path="res://resources/ui/ui_theme.tres" id="1_qejj1"]
+[ext_resource type="Texture2D" uid="uid://bxlguxsi8bfpe" path="res://assets/sprites/not_a_mango_tree.png" id="2_m4ods"]
+
+[node name="MenuContents" type="Control" unique_id=80908203]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_qejj1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=727517566]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_m4ods")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=679340069]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 321.5
+offset_right = 692.0
+offset_bottom = 398.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=780374481]
+layout_mode = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1098183235]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1805120367]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "🥭 Mango Quest"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1960124746]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+
+[node name="StartGameButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1474907995]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Start"
+
+[node name="QuitGameButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1971854824]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Quit"
