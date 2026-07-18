@@ -2,8 +2,9 @@
 
 [ext_resource type="Theme" uid="uid://j7rd4pivy3ya" path="res://resources/ui/ui_theme.tres" id="1_qejj1"]
 [ext_resource type="Texture2D" uid="uid://bxlguxsi8bfpe" path="res://assets/sprites/not_a_mango_tree.png" id="2_m4ods"]
+[ext_resource type="Script" uid="uid://d27lmkh574lhi" path="res://scenes/prototype/main_menu.gd" id="2_qgv35"]
 
-[node name="MenuContents" type="Control" unique_id=80908203]
+[node name="MainMenu" type="Control" unique_id=80908203]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,6 +14,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_qejj1")
+script = ExtResource("2_qgv35")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=727517566]
 layout_mode = 1
@@ -53,11 +55,13 @@ custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 
 [node name="StartGameButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1474907995]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Start"
 
 [node name="QuitGameButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1971854824]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Quit"

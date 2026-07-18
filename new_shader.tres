@@ -1,0 +1,19 @@
+[gd_resource type="VisualShader" format=3 uid="uid://dm7e2ou7vabta"]
+
+[ext_resource type="Texture2D" uid="uid://bvwb6qgx1q65u" path="res://resources/gradient_background.tres" id="1_mmp38"]
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_mmp38"]
+texture = ExtResource("1_mmp38")
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_mmp38"]
+input_name = "uv"
+
+[resource]
+mode = 1
+flags/light_only = false
+nodes/vertex/2/node = SubResource("VisualShaderNodeTexture_mmp38")
+nodes/vertex/2/position = Vector2(-30, 80)
+nodes/vertex/3/node = SubResource("VisualShaderNodeInput_mmp38")
+nodes/vertex/3/position = Vector2(-340, 90)
+nodes/vertex/connections = PackedInt32Array(2, 0, 0, 2, 3, 0, 0, 1, 3, 0, 2, 0)

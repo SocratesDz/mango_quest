@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ben6d88lsxhry"]
+
+[ext_resource type="Texture2D" uid="uid://nl36dkpg6rq4" path="res://assets/sprites/mango.png" id="1_80e7f"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bsk2x"]
+radius = 52.0
+height = 142.0
+
+[node name="Mango" type="RigidBody2D" unique_id=90181718]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1110857792]
+texture = ExtResource("1_80e7f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=437493178]
+shape = SubResource("CapsuleShape2D_bsk2x")

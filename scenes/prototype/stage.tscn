@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://7r7otyer5dku"]
+
+[ext_resource type="Texture2D" uid="uid://bvwb6qgx1q65u" path="res://resources/gradient_background.tres" id="2_1dr5s"]
+[ext_resource type="PackedScene" uid="uid://em1j8rxn583y" path="res://scenes/prototype/mango_tree.tscn" id="2_e8seg"]
+
+[node name="Stage" type="Node2D" unique_id=1329312236]
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=412921251]
+layer = -1
+
+[node name="Control" type="Control" parent="BackgroundLayer" unique_id=1023540932]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="BackgroundLayer/Control" unique_id=1530243751]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1dr5s")
+
+[node name="MangoTree" parent="." unique_id=896897282 instance=ExtResource("2_e8seg")]
+position = Vector2(674, 239)

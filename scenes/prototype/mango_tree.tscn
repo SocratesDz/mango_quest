@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://em1j8rxn583y"]
+
+[ext_resource type="Texture2D" uid="uid://bxlguxsi8bfpe" path="res://assets/sprites/not_a_mango_tree.png" id="1_qe2nk"]
+[ext_resource type="Script" uid="uid://ycrbvrk13kg3" path="res://scenes/prototype/mango_tree.gd" id="1_wbw4f"]
+
+[node name="MangoTree" type="Node2D" unique_id=896897282]
+script = ExtResource("1_wbw4f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=464410739]
+scale = Vector2(5, 5)
+texture = ExtResource("1_qe2nk")
+
+[node name="MangoSpawnArea" type="Area2D" parent="." unique_id=478692515]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MangoSpawnArea" unique_id=1588338501]
+polygon = PackedVector2Array(-206, 168, -274, 200, -406, 143, -391, -4, -276, -107, -86, -227, 43, -234, 140, -174, 199, -76, 263, 56, 282, 124, 131, 190, 15, 207, -56, 184)

@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Mango Quest"
+run/main_scene="uid://bih4uxppt828p"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+EventBus="*uid://cuqsd65kj7pnr"
+SceneManager="*uid://de82s7xrihh3i"
 
 [display]
 
