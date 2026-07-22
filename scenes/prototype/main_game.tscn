@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dp4x2s6hefp1i"]
 
-[ext_resource type="Texture2D" uid="uid://bxlguxsi8bfpe" path="res://assets/sprites/not_a_mango_tree.png" id="1_ifx8t"]
-[ext_resource type="Texture2D" uid="uid://bvwb6qgx1q65u" path="res://resources/gradient_background.tres" id="1_p6kst"]
+[ext_resource type="Texture2D" uid="uid://cvv4cxt5hyc6v" path="res://assets/sprites/background.png" id="1_p6kst"]
+[ext_resource type="Texture2D" uid="uid://bxkm414lp8lo4" path="res://assets/sprites/mango_tree.png" id="2_jo07g"]
+[ext_resource type="Texture2D" uid="uid://ctt5ftmfes2se" path="res://assets/sprites/mangos.png" id="3_jo07g"]
 
 [node name="MainGame" type="Node2D" unique_id=812203580]
 
@@ -9,13 +10,23 @@
 
 [node name="Background" type="Sprite2D" parent="GameLayer" unique_id=236222111]
 position = Vector2(643.5, 359)
-scale = Vector2(20.453125, 11.6875)
+scale = Vector2(0.666, 0.666)
+texture = ExtResource("1_p6kst")
+
+[node name="Window" type="Sprite2D" parent="GameLayer" unique_id=1734227835]
+position = Vector2(643.5, 359)
+scale = Vector2(0.666, 0.666)
 texture = ExtResource("1_p6kst")
 
 [node name="Tree" type="Sprite2D" parent="GameLayer" unique_id=1964452024]
-position = Vector2(558, 330.25)
-scale = Vector2(4.104166, 4.2718744)
-texture = ExtResource("1_ifx8t")
+position = Vector2(639, 362)
+scale = Vector2(0.666, 0.666)
+texture = ExtResource("2_jo07g")
+
+[node name="Mango" type="Sprite2D" parent="GameLayer" unique_id=1028267130]
+position = Vector2(517, 143)
+scale = Vector2(0.666, 0.666)
+texture = ExtResource("3_jo07g")
 
 [node name="HUDLayer" type="CanvasLayer" parent="." unique_id=389686426]
 
